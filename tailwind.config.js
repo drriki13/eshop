@@ -10,11 +10,13 @@ export default {
   ],
   theme: {
     colors: {
+      white: '#ffffff',
       primary: '#10B981',
       gray: '#E4EAEF',
       black: '#052E31'
     },
     screens: {
+      'xs': '426px',
       'sm': '768px',
       'md': '1024px',
       'lg': '1440px',

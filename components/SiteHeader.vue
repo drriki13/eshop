@@ -4,11 +4,11 @@ const visible = ref(false);
 </script>
 
 <template>
-  <div class="sticky flex items-center justify-between gap-x-10 border border-gray h-[94px] sm:h-[102px] sm:justify-center md:h-[118px] p-6">
+  <div class="sticky top-0 z-50 flex items-center justify-between gap-x-10 bg-white border border-gray h-[80px] sm:justify-center p-6">
     <a class="hidden sm:block text-black text-sm uppercase font-semibold py-2.5 hover:border-primary/30 border-b-4 border-primary" href="#">главная</a>
     <a class="hidden sm:block text-black text-sm uppercase font-semibold py-2.5 hover:border-primary/30 border-b-4 border-primary/0" href="#">каталог</a>
     <a class="transition-all hover:-translate-y-1" href="#">
-      <img class="w-[50px] h-[45px]" src="../public/img/logo.png" alt="logo">
+      <img class="w-[50px] h-[45px]" src="/img/logo.png" alt="logo">
     </a>
     <a class="hidden sm:block text-black text-sm uppercase font-semibold py-2.5 hover:border-primary/30 border-b-4 border-primary/0" href="#">статьи</a>
     <a class="hidden sm:block text-black text-sm uppercase font-semibold py-2.5 hover:border-primary/30 border-b-4 border-primary/0" href="#">избранное</a>
