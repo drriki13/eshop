@@ -1,6 +1,7 @@
 <template>
   <div
     class="flex flex-col gap-y-6 cursor-pointer transition-all hover:scale-105"
+    @click="$router.push('/articles/1')"
   >
     <div class="w-full h-[280px] bg-primary"></div>
     <div class="flex flex-col gap-y-3">
@@ -16,7 +17,7 @@
       <p class="text-black text-sm font-semibold">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam,.
+        veniam...
       </p>
       <Button class="w-fit" label="Читать статью" outlined />
     </div>

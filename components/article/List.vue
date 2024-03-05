@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col mx-[270px]">
+  <div class="flex flex-col mx-5 md:mx-[100px] lg:mx-[140px] 2lg:mx-[280px]">
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14"
     >
       <ArticleCard v-for="n in perPage" />
     </div>
@@ -12,7 +12,7 @@
       @update:rows="setPerPage"
       :totalRecords="120"
       :rowsPerPageOptions="[9, 18, 30]"
-    ></Paginator>
+    />
   </div>
 </template>
 
