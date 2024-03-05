@@ -1,6 +1,8 @@
 <template>
-  <div class="flex flex-col gap-y-6">
-    <div class="w-[430px] h-[280px] bg-primary"></div>
+  <div
+    class="flex flex-col gap-y-6 cursor-pointer transition-all hover:scale-105"
+  >
+    <div class="w-full h-[280px] bg-primary"></div>
     <div class="flex flex-col gap-y-3">
       <div class="flex justify-between items-center">
         <div
