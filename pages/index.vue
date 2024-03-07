@@ -180,6 +180,9 @@
 </template>
 
 <script lang="ts" setup>
+definePageMeta({
+  title: "Find your plant",
+});
 </script>
 
 <style scoped>
