@@ -69,9 +69,13 @@
 
 <script lang="ts" setup>
 import Chart from 'primevue/chart';
+useHead({
+  title: 'Dashboard',
+});
 
 definePageMeta({
   middleware: ['auth'],
+  layout: 'admin',
 });
 
 const selectedCity = ref();

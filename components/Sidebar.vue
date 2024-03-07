@@ -2,28 +2,98 @@
 
 <template>
   <section class="h-full w-[266px] bg-white p-4 shadow">
-    <div class="my-6">Your CRM</div>
+    <div class="my-3 text-3xl font-semibold text-black">Your CRM</div>
 
-    <ul class="flex flex-col">
-      <li class="flex cursor-pointer items-center gap-2.5 py-3 font-semibold">
-        <span class="pi pi-home"></span>Dashboard
-      </li>
-      <li class="flex cursor-pointer items-center gap-2.5 py-3 font-semibold">
-        <span class="pi pi-database"></span>Магазины
-      </li>
-      <li class="flex cursor-pointer items-center gap-2.5 py-3 font-semibold">
-        <span class="pi pi-database"></span>Категории товаров
-      </li>
-      <li class="flex cursor-pointer items-center gap-2.5 py-3 font-semibold">
-        <span class="pi pi-database"></span>Товары
-      </li>
-      <li class="flex cursor-pointer items-center gap-2.5 py-3 font-semibold">
-        <span class="pi pi-cog"></span>Настройки
-      </li>
-      <li class="flex cursor-pointer items-center gap-2.5 py-3 font-semibold">
-        <span class="pi pi-users"></span>Пользователи
-      </li>
-    </ul>
+    <div class="mt-8 flex flex-col gap-y-2">
+      <NuxtLink
+        active-class="text-primary"
+        to="/admin"
+        class="group mb-4 flex cursor-pointer items-baseline gap-2 text-black"
+      >
+        <span class="pi pi-home transition-all group-hover:text-primary" />
+        <div class="text-sm font-semibold transition-all group-hover:text-primary">Dashboard</div>
+      </NuxtLink>
+      <NuxtLink
+        active-class="text-primary"
+        to="/admin/shops"
+        class="group flex cursor-pointer items-baseline gap-2 text-black"
+      >
+        <span class="pi pi-book transition-all group-hover:text-primary" />
+        <div class="text-sm font-semibold transition-all group-hover:text-primary">Магазины</div>
+      </NuxtLink>
+      <NuxtLink
+        active-class="text-primary"
+        to="/admin/products-category"
+        class="group flex cursor-pointer items-baseline gap-2 text-black"
+      >
+        <span class="pi pi-list transition-all group-hover:text-primary" />
+        <div class="text-sm font-semibold transition-all group-hover:text-primary">
+          Категории товаров
+        </div>
+      </NuxtLink>
+      <NuxtLink
+        active-class="text-primary"
+        to="/admin/products"
+        class="group mb-4 flex cursor-pointer items-baseline gap-2 text-black"
+      >
+        <span class="pi pi-shopping-cart transition-all group-hover:text-primary" />
+        <div class="text-sm font-semibold transition-all group-hover:text-primary">Товары</div>
+      </NuxtLink>
+      <NuxtLink
+        active-class="text-primary"
+        to="/admin/articles-category"
+        class="group flex cursor-pointer items-baseline gap-2 text-black"
+      >
+        <span class="pi pi-list transition-all group-hover:text-primary" />
+        <div class="text-sm font-semibold transition-all group-hover:text-primary">
+          Категории статей
+        </div>
+      </NuxtLink>
+      <NuxtLink
+        active-class="text-primary"
+        to="/admin/articles"
+        class="group mb-4 flex cursor-pointer items-baseline gap-2 text-black"
+      >
+        <span class="pi pi-home transition-all group-hover:text-primary" />
+        <div class="text-sm font-semibold transition-all group-hover:text-primary">Статьи</div>
+      </NuxtLink>
+      <NuxtLink
+        active-class="text-primary"
+        to="/admin/users"
+        class="group flex cursor-pointer items-baseline gap-2 text-black"
+      >
+        <span class="pi pi-user transition-all group-hover:text-primary" />
+        <div class="text-sm font-semibold transition-all group-hover:text-primary">
+          Пользователи
+        </div>
+      </NuxtLink>
+      <NuxtLink
+        active-class="text-primary"
+        to="/admin/clients"
+        class="group mb-4 flex cursor-pointer items-baseline gap-2 text-black"
+      >
+        <span class="pi pi-users transition-all group-hover:text-primary" />
+        <div class="text-sm font-semibold transition-all group-hover:text-primary">Клиенты</div>
+      </NuxtLink>
+      <NuxtLink
+        active-class="text-primary"
+        to="/admin/settings"
+        class="group mb-4 flex cursor-pointer items-baseline gap-2 text-black"
+      >
+        <span class="pi pi-cog transition-all group-hover:text-primary" />
+        <div class="text-sm font-semibold transition-all group-hover:text-primary">Настройки</div>
+      </NuxtLink>
+      <NuxtLink
+        active-class="text-primary"
+        to="/"
+        class="group flex cursor-pointer items-baseline gap-2 text-black"
+      >
+        <span class="pi pi-sign-out transition-all group-hover:text-primary" />
+        <div class="text-sm font-semibold transition-all group-hover:text-primary">
+          Вернутся на сайт
+        </div>
+      </NuxtLink>
+    </div>
   </section>
 </template>
 

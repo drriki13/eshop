@@ -143,7 +143,7 @@
 </template>
 
 <script lang="ts" setup>
-definePageMeta({
+useHead({
   title: 'Find your plant',
 });
 </script>

@@ -51,7 +51,7 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({
+useHead({
   title: 'Каталог',
 });
 </script>

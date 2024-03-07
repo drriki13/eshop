@@ -19,7 +19,7 @@ const visible = ref(false);
       to="/catalog"
       >каталог</NuxtLink
     >
-    <NuxtLink class="transition-all hover:-translate-y-1" to="/">
+    <NuxtLink class="transition-all hover:-translate-y-1" to="/admin">
       <img class="h-[45px] w-[50px]" src="/img/logo.png" alt="logo" />
     </NuxtLink>
     <NuxtLink

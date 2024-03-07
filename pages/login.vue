@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+  title: 'Auth',
+});
+
 definePageMeta({
   layout: 'empty',
 });
