@@ -1,47 +1,56 @@
 <template>
-  <div class="flex flex-col gap-y-6 cursor-pointer transition-all hover:scale-105" @click="showProducts">
+  <div
+    class="flex cursor-pointer flex-col gap-y-6 transition-all hover:scale-105"
+    @click="showProducts"
+  >
     <div class="relative">
-      <div class="w-full h-[330px] bg-primary"></div>
-      <div class="absolute top-0 right-0 bg-gray mt-4 mr-4 h-10 w-10 rounded-full flex items-center justify-center">0</div>
+      <div class="h-[330px] w-full bg-primary"></div>
+      <div
+        class="absolute right-0 top-0 mr-4 mt-4 flex h-10 w-10 items-center justify-center rounded-full bg-gray"
+      >
+        0
+      </div>
     </div>
 
     <div class="flex flex-col gap-y-2">
       <div class="flex flex-col">
         <div class="flex items-center justify-between">
-          <div class="text-black text-xl font-semibold">Название растения</div>
-          <div class="text-black text-sm font-semibold">5.0</div>
+          <div class="text-xl font-semibold text-black">Название растения</div>
+          <div class="text-sm font-semibold text-black">5.0</div>
         </div>
-        <div class="text-primary text-sm font-semibold">The name of the plant</div>
+        <div class="text-sm font-semibold text-primary">The name of the plant</div>
       </div>
       <div class="flex items-center gap-x-3">
-        <h2 class="text-black text-2xl font-semibold">1400 ₽</h2>
+        <h2 class="text-2xl font-semibold text-black">1400 ₽</h2>
         <span class="text-black line-through">1600 ₽</span>
       </div>
-      <p class="text-black text-sm font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      <p class="text-sm font-semibold text-black">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+      </p>
       <Button class="w-fit" label="Смотреть" outlined />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import {ModalsProduct} from "#components";
+import { ModalsProduct } from '#components';
 
 const dialog = useDialog();
 const showProducts = () => {
-  dialog.open(ModalsProduct,{
+  dialog.open(ModalsProduct, {
     props: {
       header: 'Product List',
       style: {
         width: '50vw',
       },
-      breakpoints:{
+      breakpoints: {
         '960px': '75vw',
-        '640px': '90vw'
+        '640px': '90vw',
       },
-      modal: true
-    }
+      modal: true,
+    },
   });
-}
+};
 </script>
 
 <style scoped></style>

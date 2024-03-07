@@ -1,46 +1,42 @@
 <template>
   <section
-      class="flex flex-col h-full w-full bg-gray px-5 sm:px-10 md:px-[100px] lg:px-[140px] 2lg:px-[280px] py-10 gap-y-4"
+    class="flex h-full w-full flex-col gap-y-4 bg-gray px-5 py-10 sm:px-10 md:px-[100px] lg:px-[140px] 2lg:px-[280px]"
   >
-    <h1 class="text-4xl text-black font-bold">Контакты</h1>
-    <p class="text-sm text-black font-semibold md:max-w-[600px]">
-      © Все права защищены. Тексты, изображения и другой контент, размещенные
-      на этом сайте, являются объектом авторского права и защищены
-      законодательством об авторских правах. При использовании информации с
-      данного сайта, обязательно указывайте ссылку на источник.
+    <h1 class="text-4xl font-bold text-black">Контакты</h1>
+    <p class="text-sm font-semibold text-black md:max-w-[600px]">
+      © Все права защищены. Тексты, изображения и другой контент, размещенные на этом сайте,
+      являются объектом авторского права и защищены законодательством об авторских правах. При
+      использовании информации с данного сайта, обязательно указывайте ссылку на источник.
     </p>
-    <div class="flex flex-col gap-y-1 gap-x-5 md:flex-row">
+    <div class="flex flex-col gap-x-5 gap-y-1 md:flex-row">
       <a
-          class="w-fit border-b border-dashed border-b-black text-sm text-black font-semibold"
-          href="#"
-      >Политика конфиденциальности</a
+        class="w-fit border-b border-dashed border-b-black text-sm font-semibold text-black"
+        href="#"
+        >Политика конфиденциальности</a
       >
       <a
-          class="w-fit border-b border-dashed border-b-black text-sm text-black font-semibold"
-          href="#"
-      >Условия использования</a
+        class="w-fit border-b border-dashed border-b-black text-sm font-semibold text-black"
+        href="#"
+        >Условия использования</a
       >
     </div>
-    <div class="flex flex-col gap-y-2 gap-x-5 mt-2 md:flex-row">
+    <div class="mt-2 flex flex-col gap-x-5 gap-y-2 md:flex-row">
       <div class="flex gap-x-2">
         <i>1</i>
-        <div class="text-sm text-black font-semibold">Санкт-Петербург</div>
+        <div class="text-sm font-semibold text-black">Санкт-Петербург</div>
       </div>
       <div class="flex gap-x-2">
         <i>1</i>
-        <div class="text-sm text-black font-semibold">@findyourplantinfo</div>
+        <div class="text-sm font-semibold text-black">@findyourplantinfo</div>
       </div>
       <div class="flex gap-x-2">
         <i>1</i>
-        <div class="text-sm text-black font-semibold">
-          findyourplantofficial@gmail.com
-        </div>
+        <div class="text-sm font-semibold text-black">findyourplantofficial@gmail.com</div>
       </div>
     </div>
   </section>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <style scoped></style>

@@ -1,23 +1,20 @@
 <template>
   <div
-    class="flex flex-col gap-y-6 cursor-pointer transition-all hover:scale-105"
+    class="flex cursor-pointer flex-col gap-y-6 transition-all hover:scale-105"
     @click="$router.push('/articles/1')"
   >
-    <div class="w-full h-[280px] bg-primary"></div>
+    <div class="h-[280px] w-full bg-primary"></div>
     <div class="flex flex-col gap-y-3">
-      <div class="flex justify-between items-center">
-        <div
-          class="py-3 px-4 bg-gray uppercase rounded-full text-black text-xs font-semibold"
-        >
+      <div class="flex items-center justify-between">
+        <div class="rounded-full bg-gray px-4 py-3 text-xs font-semibold uppercase text-black">
           сезонные работы
         </div>
         <div class="flex gap-x-3 text-black">like: 20 view: 190</div>
       </div>
-      <h2 class="text-black text-2xl font-semibold">Оформление зимнего сада</h2>
-      <p class="text-black text-sm font-semibold">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam...
+      <h2 class="text-2xl font-semibold text-black">Оформление зимнего сада</h2>
+      <p class="text-sm font-semibold text-black">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam...
       </p>
       <Button class="w-fit" label="Читать статью" outlined />
     </div>

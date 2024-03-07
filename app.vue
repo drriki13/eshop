@@ -1,8 +1,8 @@
 <template>
-    <NuxtLayout>
-        <NuxtPage />
-        <DynamicDialog />
-    </NuxtLayout>
+  <NuxtLayout>
+    <NuxtPage />
+    <DynamicDialog />
+  </NuxtLayout>
 </template>
 
 <style>
@@ -11,11 +11,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #E4EAEF;
+  background-color: #e4eaef;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #10B981;
+  background-color: #10b981;
   border-radius: 14px;
 }
 

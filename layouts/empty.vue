@@ -1,9 +1,7 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div class="flex justify-center items-center h-screen bg__header">
+  <div class="bg__header flex h-screen items-center justify-center">
     <slot />
   </div>
 </template>

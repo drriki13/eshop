@@ -1,16 +1,16 @@
 <template>
   <div class="flex flex-col">
-    <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6">
+    <div class="grid grid-cols-1 gap-x-6 gap-y-8 xs:grid-cols-2 lg:grid-cols-3">
       <CatalogCard v-for="n in perPage" />
     </div>
 
     <Paginator
-        class="mt-6"
-        v-model="page"
-        :rows="perPage"
-        @update:rows="setPerPage"
-        :totalRecords="120"
-        :rowsPerPageOptions="[9, 18, 30]"
+      class="mt-6"
+      v-model="page"
+      :rows="perPage"
+      @update:rows="setPerPage"
+      :totalRecords="120"
+      :rowsPerPageOptions="[9, 18, 30]"
     />
   </div>
 </template>

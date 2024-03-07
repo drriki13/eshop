@@ -1,8 +1,6 @@
 <template>
-  <div class="flex flex-col mx-5 md:mx-[100px] lg:mx-[140px] 2lg:mx-[280px]">
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14"
-    >
+  <div class="mx-5 flex flex-col md:mx-[100px] lg:mx-[140px] 2lg:mx-[280px]">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
       <ArticleCard v-for="n in perPage" />
     </div>
     <Paginator
