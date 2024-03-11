@@ -23,7 +23,6 @@
       </NuxtLink>
       <NuxtLink
         active-class="text-primary"
-        to="/admin/products-category"
         class="group flex cursor-pointer items-baseline gap-2 text-black"
       >
         <span class="pi pi-list transition-all group-hover:text-primary" />
