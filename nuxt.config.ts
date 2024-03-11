@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
-    baseURL: process.env.BASE_URL || '/',
+    baseURL: '/eshop/',
   },
   devtools: { enabled: true },
   modules: ['nuxt-primevue', '@nuxtjs/tailwindcss'],
