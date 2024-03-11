@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
+    baseURL: process.env.BASE_URL || '/',
   },
   devtools: { enabled: true },
   modules: ['nuxt-primevue', '@nuxtjs/tailwindcss'],
