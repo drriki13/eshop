@@ -8,7 +8,7 @@
       <div
         class="absolute right-0 top-0 mr-4 mt-4 flex h-10 w-10 items-center justify-center rounded-full bg-gray"
       >
-        <i class="pi pi-heart" />
+        <nuxt-icon name="heart" class="h-6 w-6 text-black" />
       </div>
     </div>
 

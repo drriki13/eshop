@@ -16,7 +16,7 @@
       <div class="flex flex-col items-center gap-y-3">
         <div class="relative h-14 w-[334px] md:w-[540px] lg:w-[620px]">
           <Button
-            class="absolute left-1.5 mt-1.5 h-11 w-11 rounded-xl"
+            class="absolute left-1.5 mt-1.5 h-11 w-11 rounded-xl text-primary"
             severity="secondary"
             icon="pi pi-map-marker"
           />

@@ -19,9 +19,11 @@
         </div>
 
         <div class="flex items-center gap-x-2">
-          <div class="bg-gray px-3 py-1.5 text-black cursor-pointer" v-tooltip="'ЗКС'">ЗКС</div>
-          <div class="bg-gray px-3 py-1.5 text-black cursor-pointer" v-tooltip="'Air-pot'">Air-pot</div>
-          <div class="bg-gray px-3 py-1.5 text-black cursor-pointer" v-tooltip="'2xv'">2xv</div>
+          <div class="cursor-pointer bg-gray px-3 py-1.5 text-black" v-tooltip="'ЗКС'">ЗКС</div>
+          <div class="cursor-pointer bg-gray px-3 py-1.5 text-black" v-tooltip="'Air-pot'">
+            Air-pot
+          </div>
+          <div class="cursor-pointer bg-gray px-3 py-1.5 text-black" v-tooltip="'2xv'">2xv</div>
         </div>
 
         <p class="text-black">
@@ -31,32 +33,36 @@
         </p>
 
         <div class="flex flex-col gap-y-1.5">
-          <div class="group flex items-center gap-x-2 cursor-pointer">
-            <div class="flex items-center justify-center h-6 w-6 text-primary">
-              <i class="pi pi-map-marker" />
+          <div class="group flex cursor-pointer items-center gap-x-2">
+            <div class="flex h-6 w-6 items-center justify-center text-primary">
+              <nuxt-icon name="location" class="h-6 w-6 text-primary" />
             </div>
             <div class="text-black group-hover:text-primary">Москва, ул. Центральная, 20</div>
           </div>
-          <div class="group flex items-center gap-x-2 cursor-pointer">
-            <div class="flex items-center justify-center h-6 w-6 text-primary">
-              <i class="pi pi-phone" />
+          <div class="group flex cursor-pointer items-center gap-x-2">
+            <div class="flex h-6 w-6 items-center justify-center text-primary">
+              <nuxt-icon name="smartphone" class="h-6 w-6 text-primary" />
             </div>
             <div class="text-black group-hover:text-primary">+7 990 999-99-99</div>
           </div>
-          <div class="group flex items-center gap-x-2 cursor-pointer">
-            <div class="flex items-center justify-center h-6 w-6 text-primary">
-              <i class="pi pi-google" />
+          <div class="group flex cursor-pointer items-center gap-x-2">
+            <div class="flex h-6 w-6 items-center justify-center text-primary">
+              <nuxt-icon name="mail" class="h-6 w-6 text-primary" />
             </div>
             <div class="text-black group-hover:text-primary">pochta_plants@mail.ru</div>
           </div>
         </div>
 
         <div class="flex items-center gap-x-2">
-          <div class="group flex p-[14px] items-center justify-center rounded-full bg-gray cursor-pointer">
-            <i class="pi pi-thumbs-up group-hover:text-primary" />
+          <div
+            class="group flex cursor-pointer items-center justify-center rounded-full bg-gray p-[14px]"
+          >
+            <nuxt-icon name="thumbs-up" class="h-6 w-6 text-black group-hover:text-primary" />
           </div>
-          <div class="group flex p-[14px] items-center justify-center rounded-full bg-gray cursor-pointer">
-            <i class="pi pi-share-alt group-hover:text-primary" />
+          <div
+            class="group flex cursor-pointer items-center justify-center rounded-full bg-gray p-[14px]"
+          >
+            <nuxt-icon name="share" class="h-6 w-6 text-black group-hover:text-primary" />
           </div>
         </div>
       </div>

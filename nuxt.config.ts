@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     baseURL: '/eshop/',
   },
   devtools: { enabled: true },
-  modules: ['nuxt-primevue', '@nuxtjs/tailwindcss'],
+  modules: ['nuxt-primevue', '@nuxtjs/tailwindcss', 'nuxt-icons'],
   primevue: {
     usePrimeVue: true,
     options: {

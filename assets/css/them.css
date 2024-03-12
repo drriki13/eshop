@@ -48,3 +48,9 @@
     --p-anchor-gutter: 2px;
     color-scheme: light;
 }
+
+ .nuxt-icon svg{
+     width: 100% !important;
+     height: 100% !important;
+     margin-bottom: 0 !important;
+ }

@@ -11,11 +11,11 @@
         </div>
         <div class="flex gap-x-3">
           <div class="flex items-center justify-center gap-x-1">
-            <i class="pi pi-thumbs-up text-primary" />
+            <nuxt-icon name="thumbs-up" class="h-6 w-6 text-primary" />
             <div class="text-black">20</div>
           </div>
           <div class="flex items-center justify-center gap-x-1">
-            <i class="pi pi-eye text-primary" />
+            <nuxt-icon name="eye" class="h-6 w-6 text-primary" />
             <div class="text-black">50</div>
           </div>
         </div>
@@ -30,7 +30,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <style scoped></style>
