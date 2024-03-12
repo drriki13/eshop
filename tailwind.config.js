@@ -11,7 +11,7 @@ export default {
   theme: {
     colors: {
       white: '#ffffff',
-      primary: '#6BB77B',
+      primary: '#10b981',
       gray: '#E4EAEF',
       black: '#052E31',
     },

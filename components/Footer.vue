@@ -51,6 +51,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, bottom;
-  background-image: url('../public/img/footer.png');
+  background-image: url('/img/footer.png');
 }
 </style>
