@@ -14,13 +14,13 @@
       </div>
 
       <div class="flex flex-col items-center gap-y-3">
-        <div class="group relative h-14 w-[334px] md:w-[540px] lg:w-[620px]">
+        <div class="relative h-14 w-[334px] md:w-[540px] lg:w-[620px]">
           <Button
             class="absolute left-1.5 mt-1.5 h-11 w-11 rounded-xl"
             severity="secondary"
             icon="pi pi-map-marker"
           />
-          <InputText class="h-14 w-full rounded-xl px-16 border-0 group-hover:border" placeholder="Название растения..." />
+          <InputText class="h-14 w-full rounded-xl px-16 border-[#f0f0f2]" placeholder="Название растения..." />
           <Button class="absolute right-1.5 mt-1.5 h-11 w-11 rounded-xl" icon="pi pi-search" />
         </div>
 
