@@ -4,13 +4,12 @@
       class="bg_img relative flex h-[calc(600px-80px)] flex-col items-center justify-center gap-y-8"
     >
       <div class="flex flex-col items-center gap-y-3 px-4">
-        <h1 class="text-4xl font-bold text-black">Find Your Plant</h1>
+        <h1 class="text-7xl font-bold text-black">Каталог</h1>
         <h3
-          class="w-auto text-center text-sm font-semibold text-black sm:w-[480px] md:w-[620px] lg:w-[660px]"
+          class="w-auto text-center font-semibold text-black sm:w-[480px] md:w-[620px] lg:w-[660px]"
         >
-          Простой и удобный способ поиска растений по названию или сорту, доступный в самых крупных
-          городах России. Вам не нужно тратить время на поездки по питомникам - достаточно ввести
-          его название или сорт и получить результаты
+          Выберите город, введите название растения или сорта и получите результат. Поиск работает на русском, латинице
+          или английском языках. На каждом языке будут различные результаты. Пробуйте разные варианты и получайте наилучший результат.
         </h3>
       </div>
 
@@ -26,8 +25,8 @@
         </div>
 
         <div class="flex gap-x-1.5">
-          <span class="text-sm font-semibold text-black">Популярное: </span>
-          <span class="text-sm font-semibold text-primary">Example, Example, Example</span>
+          <span class="font-semibold text-black">Популярное: </span>
+          <span class="font-semibold text-primary">Example, Example, Example</span>
         </div>
       </div>
 
@@ -37,7 +36,7 @@
     </div>
 
     <div class="flex flex-col items-center gap-y-3">
-      <h2 class="text-3xl font-semibold text-black">Хвойные растения</h2>
+      <h2 class="text-5xl font-semibold text-black">Хвойные растения</h2>
       <Button class="w-fit md:hidden" label="Фильтры" outlined />
     </div>
 

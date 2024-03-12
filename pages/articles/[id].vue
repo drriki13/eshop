@@ -3,12 +3,12 @@
     <div class="h-[220px] w-full bg-primary sm:h-[300px] md:h-[420px] lg:h-[450px]"></div>
 
     <div class="mx-5 flex flex-col gap-y-4 sm:mx-10 md:mx-[100px] lg:mx-[140px] 2lg:mx-[280px]">
-      <h2 class="text-2xl font-semibold text-black">Оформление зимнего сада</h2>
+      <h2 class="text-7xl font-semibold text-black">Оформление зимнего сада</h2>
       <div class="w-fit rounded-full bg-gray px-4 py-3 text-xs font-semibold uppercase text-black">
         сезонные работы
       </div>
-      <span class="text-sm font-semibold text-primary">29 ноября 200 чел. прочитали</span>
-      <p class="text-sm font-semibold text-black">
+      <span class="font-semibold text-primary">29 ноября 200 чел. прочитали</span>
+      <p class="text-black">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Morbi tristique senectus et netus et malesuada fames ac
         turpis. At erat pellentesque adipiscing commodo elit. Placerat duis ultricies lacus sed
@@ -23,7 +23,7 @@
         sapien et ligula ullamcorper malesuada proin libero nunc. Ultrices neque ornare aenean
         euismod elementum nisi quis eleifend quam.
       </p>
-      <p class="text-sm font-semibold text-black">
+      <p class="text-black">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Morbi tristique senectus et netus et malesuada fames ac
         turpis. At erat pellentesque adipiscing commodo elit. Placerat duis ultricies lacus sed
@@ -38,9 +38,16 @@
         sapien et ligula ullamcorper malesuada proin libero nunc. Ultrices neque ornare aenean
         euismod elementum nisi quis eleifend quam.
       </p>
-      <div class="flex items-center gap-x-2">
-        <div class="flex h-6 w-6 items-center justify-center rounded-full bg-gray">1</div>
-        <div class="flex h-6 w-6 items-center justify-center rounded-full bg-gray">2</div>
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-x-2">
+          <div class="group flex p-[14px] items-center justify-center rounded-full bg-gray cursor-pointer">
+            <i class="pi pi-thumbs-up group-hover:text-primary" />
+          </div>
+          <div class="group flex p-[14px] items-center justify-center rounded-full bg-gray cursor-pointer">
+            <i class="pi pi-share-alt group-hover:text-primary" />
+          </div>
+        </div>
+        <Button outlined label="Вернутся" @click="$router.back()" />
       </div>
     </div>
 

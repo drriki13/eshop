@@ -8,7 +8,7 @@
       <div
         class="absolute right-0 top-0 mr-4 mt-4 flex h-10 w-10 items-center justify-center rounded-full bg-gray"
       >
-        0
+        <i class="pi pi-heart" />
       </div>
     </div>
 
@@ -16,15 +16,18 @@
       <div class="flex flex-col">
         <div class="flex items-center justify-between">
           <div class="text-xl font-semibold text-black">Название растения</div>
-          <div class="text-sm font-semibold text-black">5.0</div>
+          <div class="flex items-center justify-center gap-x-2">
+            <i class="pi pi-star-fill text-primary" />
+            <div class="text-black">5.0</div>
+          </div>
         </div>
-        <div class="text-sm font-semibold text-primary">The name of the plant</div>
+        <div class="text-primary">The name of the plant</div>
       </div>
       <div class="flex items-center gap-x-3">
         <h2 class="text-2xl font-semibold text-black">1400 ₽</h2>
         <span class="text-black line-through">1600 ₽</span>
       </div>
-      <p class="text-sm font-semibold text-black">
+      <p class="text-black">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
       </p>
       <Button class="w-fit" label="Смотреть" outlined />

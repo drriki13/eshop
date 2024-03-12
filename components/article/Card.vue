@@ -9,10 +9,19 @@
         <div class="rounded-full bg-gray px-4 py-3 text-xs font-semibold uppercase text-black">
           сезонные работы
         </div>
-        <div class="flex gap-x-3 text-black">like: 20 view: 190</div>
+        <div class="flex gap-x-3">
+          <div class="flex items-center justify-center gap-x-1">
+            <i class="pi pi-thumbs-up text-primary" />
+            <div class="text-black">20</div>
+          </div>
+          <div class="flex items-center justify-center gap-x-1">
+            <i class="pi pi-eye text-primary" />
+            <div class="text-black">50</div>
+          </div>
+        </div>
       </div>
       <h2 class="text-2xl font-semibold text-black">Оформление зимнего сада</h2>
-      <p class="text-sm font-semibold text-black">
+      <p class="text-black">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim veniam...
       </p>
@@ -21,6 +30,7 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <style scoped></style>
