@@ -14,5 +14,10 @@ export default defineNuxtConfig({
     },
     cssLayerOrder: 'tailwind-base,primevue,tailwind-utilities',
   },
-  css: ['assets/fonts/TildaSans/TildaSans-Regular/TildaSans-Regular.css','primevue/resources/themes/aura-light-green/theme.css', 'primeicons/primeicons.css'],
+  css: [
+      'assets/fonts/TildaSans/TildaSans-Regular/TildaSans-Regular.css',
+      'primevue/resources/themes/aura-light-green/theme.css',
+      'primeicons/primeicons.css',
+      'assets/css/them.css'
+  ],
 });

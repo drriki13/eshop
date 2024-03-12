@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: TildaSansRegular;
+  font-family: TildaSansRegular, serif;
 }
 
 .page-enter-active,

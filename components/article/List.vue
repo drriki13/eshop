@@ -3,8 +3,9 @@
     <div class="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
       <ArticleCard v-for="n in perPage" />
     </div>
+
     <Paginator
-      class="mt-6"
+      class="mt-[60px]"
       v-model="page"
       :rows="perPage"
       @update:rows="setPerPage"

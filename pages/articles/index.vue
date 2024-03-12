@@ -1,8 +1,8 @@
 <template>
   <div class="flex h-full flex-col items-center gap-y-[60px]">
     <section class="mx-5 mt-10 flex flex-col items-center gap-y-5">
-      <h1 class="text-7xl font-bold text-black">Статьи</h1>
-      <p class="max-w-[840px] text-center font-semibold text-black">
+      <h1 class="text-[38px] sm:text-[70px] font-semibold text-black">Статьи</h1>
+      <p class="max-w-[840px] text-center text-black">
         Полезная информация по уходу за вашим садом от профессионалов со всей страны. Кроме того, мы
         предлагаем раздел
         <span class="cursor-pointer text-primary">«Ищите уход?»</span>

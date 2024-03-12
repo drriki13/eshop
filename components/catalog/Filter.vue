@@ -31,7 +31,7 @@
     <div class="flex flex-col gap-y-5">
       <h2 class="text-2xl font-semibold text-black">Цена</h2>
       <Slider v-model="range" min="0" max="100000" range class="w-14rem" />
-      <div class=" font-semibold text-black">{{ range[0] }} р. — {{ range[1] }} р.</div>
+      <div class="text-black">{{ range[0] }} р. — {{ range[1] }} р.</div>
     </div>
 
     <div class="flex flex-col gap-y-5">

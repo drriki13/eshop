@@ -5,7 +5,7 @@
     </div>
 
     <Paginator
-      class="mt-6"
+      class="mt-[60px]"
       v-model="page"
       :rows="perPage"
       @update:rows="setPerPage"

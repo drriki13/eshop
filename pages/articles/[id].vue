@@ -3,7 +3,7 @@
     <div class="h-[220px] w-full bg-primary sm:h-[300px] md:h-[420px] lg:h-[450px]"></div>
 
     <div class="mx-5 flex flex-col gap-y-4 sm:mx-10 md:mx-[100px] lg:mx-[140px] 2lg:mx-[280px]">
-      <h2 class="text-7xl font-semibold text-black">Оформление зимнего сада</h2>
+      <h2 class="text-[38px] sm:text-[70px] font-semibold text-black">Оформление зимнего сада</h2>
       <div class="w-fit rounded-full bg-gray px-4 py-3 text-xs font-semibold uppercase text-black">
         сезонные работы
       </div>

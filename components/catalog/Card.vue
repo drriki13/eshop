@@ -42,7 +42,7 @@ const dialog = useDialog();
 const showProducts = () => {
   dialog.open(ModalsProduct, {
     props: {
-      header: 'Product List',
+      header: 'Card',
       style: {
         width: '50vw',
       },

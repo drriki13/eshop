@@ -5,7 +5,7 @@ const visible = ref(false);
 
 <template>
   <div
-    class="sticky top-0 z-50 flex h-[80px] items-center justify-between gap-x-10 border border-gray bg-white p-6 sm:justify-center"
+    class="sticky top-0 z-50 flex h-[96px] items-center justify-between gap-x-10 border border-gray bg-white p-6 sm:justify-center"
   >
     <NuxtLink
       exact-active-class="active"
