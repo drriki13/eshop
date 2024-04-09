@@ -10,8 +10,17 @@ definePageMeta({
 const loginForm = ref({
   login: '',
   password: '',
-  rememberMe: false,
+  rememberMe: true,
 });
+
+const auth = async () => {
+  const response = await useFetch('/api/auth/login', {
+    method: 'POST',
+    body: loginForm.value,
+  });
+
+  console.log(response);
+};
 </script>
 
 <template>
@@ -43,7 +52,7 @@ const loginForm = ref({
         <InputSwitch inputId="rememberMe" v-model="loginForm.rememberMe" />
         <label for="rememberMe" class="w-fit cursor-pointer">Запомнить меня</label>
       </div>
-      <Button label="Войти" />
+      <Button @click="auth" label="Войти" />
     </div>
   </div>
 </template>
