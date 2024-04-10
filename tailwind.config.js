@@ -14,6 +14,7 @@ export default {
       primary: '#10b981',
       gray: '#E4EAEF',
       black: '#052E31',
+      red: '#EF4444',
     },
     screens: {
       xs: '426px',
