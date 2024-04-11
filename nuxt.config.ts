@@ -5,7 +5,17 @@ export default defineNuxtConfig({
     baseURL: '/eshop/',
   },
   devtools: { enabled: true },
-  modules: ['nuxt-primevue', '@vee-validate/nuxt', '@nuxtjs/tailwindcss', 'nuxt-icons'],
+  modules: [
+    '@pinia/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
+    'nuxt-primevue',
+    '@vee-validate/nuxt',
+    '@nuxtjs/tailwindcss',
+    'nuxt-icons',
+  ],
+  pinia: {
+    storesDirs: ['./stores/**', './custom-folder/stores/**'],
+  },
   primevue: {
     usePrimeVue: true,
     options: {

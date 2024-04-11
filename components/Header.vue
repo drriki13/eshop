@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import type { IUser } from '~/types/IUser';
+import { useUserStore } from '~/stores/user';
+
 const menu = ref();
 const items = [
   {
@@ -8,10 +11,20 @@ const items = [
   {
     label: 'Выход',
     icon: 'pi pi-sign-out',
+    command: () => logout(),
   },
 ];
-const toggle = (event) => {
+const toggle = (event: any) => {
   menu.value.toggle(event);
+};
+
+const logout = async () => {
+  const { data } = useFetch('/api/auth/logout');
+  const { setUser } = useUserStore();
+  const router = useRouter();
+
+  setUser(null, false);
+  await router.push('/');
 };
 </script>
 

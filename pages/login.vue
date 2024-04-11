@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useUserStore } from '~/stores/user';
+import type { IUser } from '~/types/IUser';
+
 useHead({
   title: 'Auth',
 });
@@ -24,7 +27,7 @@ const onSubmit = handleSubmit((values) => {
 });
 
 const auth = async (form: any) => {
-  const { data, error } = await useFetch('/api/auth/login', {
+  const { data, error } = await useFetch<IUser>('/api/auth/login', {
     method: 'POST',
     body: form,
   });
@@ -33,8 +36,16 @@ const auth = async (form: any) => {
     error.value.data.data.forEach((item: any) => {
       setFieldError(item.field, item.message);
     });
-  } else {
-    console.log('Success: ', data);
+
+    return;
+  }
+
+  if (data) {
+    const { setUser } = useUserStore();
+    const router = useRouter();
+
+    setUser(data.value, true);
+    await router.push('/admin');
   }
 };
 </script>
